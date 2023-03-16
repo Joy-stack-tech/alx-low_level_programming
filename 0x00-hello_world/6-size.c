@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * main -code that prints the various size of computers
- *
- * Return: Always 0
+ * main -code that prints out data types in C
+ *code by Joy-stack-tech
+ * Return: 0
 */
 
 int main(void)
