@@ -8,7 +8,7 @@
  *
  * @n: number of bytes to be filled in the memory block as pointed by @s
  *
- * @s: filled with the constant byte @b
+ * @s: with the constant byte @b
  *
  * Return: a pointer to @s
 */
@@ -18,9 +18,9 @@ char *_memset(char *s, char b, unsigned int n);
 
 	while (a < n)
 	{
-		s(a) = b;
-		a++;
+	s(a) = b;
+	a++;
 	}
 
-	return (s)
+	return (s);
 }
