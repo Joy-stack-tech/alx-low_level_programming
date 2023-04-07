@@ -2,7 +2,7 @@
 /**
  * _pow_recursion - function that raises @x to the power of @y
  * @x: an integer
- * @y; power in which @x will be raised to
+ * @y: power in which @x will be raised to
  *
  * Return: integer
 */
