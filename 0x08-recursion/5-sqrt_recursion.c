@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * sqrt2 - used to evaluate from 1 to n
+ * sqrt2 - function used to evaluate from 1 to n
  * @a: same number as  n
  * @b: int that iterates from 1 to n
  *
- * Return: 1
+ * Return: int
 */
 int sqrt2(int a, int b)
 {
@@ -14,11 +14,12 @@ int sqrt2(int a, int b)
 		return (-1);
 	return (sqrt2(a, b + 1));
 }
+
 /**
- * _sqrt_recursion - returns the natural square root of a number
- * @n: integer
+ * _sqrt_recursion - function that returns the natural square root of a number
+ * @n: integer of which square root would be found
  *
- * Return: on success 1
+ * Return: natural square root or -1
 */
 int _sqrt_recursion(int n)
 {
