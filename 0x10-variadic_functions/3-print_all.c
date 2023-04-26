@@ -36,7 +36,7 @@ void print_all(const char * const format, ...)
 				break;
 			default:
 				j = 1;
-				break;
+				continue;
 		}
 		if (format[j + 1] != '\0' && cray == 0)
 			printf(", ");
