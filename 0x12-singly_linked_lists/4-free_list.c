@@ -7,9 +7,9 @@ void free_list(list_t *head)
 {
 	list_t *grap;
 
+	grap = head;
 	while (head != NULL)
 	{
-		grap = head;
 		free(grap->str);
 		free(grap);
 		grap = grap->next;
