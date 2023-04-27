@@ -6,12 +6,13 @@
 */
 size_t print_list(const list_t *h)
 {
-	int jam;
+	int count;
 
-	jam = 0;
-	while (h != NULL)
+	count = 0;
+
+	while (h)
 	{
-		if (h->str != NULL)
+		if (h->str == NULL)
 		{
 			printf("[%d]%s\n", h->len, h->str);
 		}
@@ -19,8 +20,8 @@ size_t print_list(const list_t *h)
 		{
 			printf("[0] (nil)\n");
 		}
-		jam++;
 		h = h->next;
+		count++;
 	}
-	return (jam);
+	return (count);
 }
