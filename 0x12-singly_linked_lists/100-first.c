@@ -1,12 +1,13 @@
 #include <stdio.h>
 
-void _attribute_((constructor)) janny(void);
+void __attribute__((constructor)) myjanny();
 /**
- * janny - func that will be executed before main
- * Return: nothing
+ * myjanny - func that will be executed before main
+ * so apply constructor attribute to it
+ * Return: 0
 */
-void janny(void)
+void myjanny(void)
 {
-	printf("You're beat! and yet, you must allow,");
-	printf("\nI bore my house upon my back!\n");
+	printf("You're beat! and yet, you must allow,\n");
+	printf("I bore my house upon my back!\n");
 }
