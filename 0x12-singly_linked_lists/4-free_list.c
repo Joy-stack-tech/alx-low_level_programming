@@ -5,10 +5,10 @@
 */
 void free_list(list_t *head)
 {
-	list_t  *gap;
+	list_t *gap;
 
 	gap = head;
-	while (head != NULL)
+	while (head)
 	{
 		free(gap->str);
 		free(gap);
