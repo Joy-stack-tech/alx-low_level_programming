@@ -1,5 +1,6 @@
 #include <stdio.h>
-void janny (void) _attribute_((constructor));
+
+void _attribute_((constructor)) janny(void);
 /**
  * janny - func that will be executed before main
  * Return: nothing
