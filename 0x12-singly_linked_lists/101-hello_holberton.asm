@@ -9,7 +9,7 @@ main:
 push rbp ; sets up stack space
 mov rbp,rsp
 mov rdi, fmt
-call printf ; call the C func printf
+call rax; call the C func printf
 mov rsp, rbp
 pop rbp ; used to restore stack, further exit
 mov rax, 0
