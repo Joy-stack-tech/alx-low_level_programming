@@ -5,14 +5,14 @@
 */
 void free_list(list_t *head)
 {
-	list_t *grap;
+	list_t  *gap;
 
-	grap = head;
+	gap = head;
 	while (head != NULL)
 	{
-		free(grap->str);
-		free(grap);
-		grap = grap->next;
+		free(gap->str);
+		free(gap);
+		gap = gap->next;
 	}
 }
 
