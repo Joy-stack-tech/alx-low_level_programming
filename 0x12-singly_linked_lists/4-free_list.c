@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <string.h>
 /**
  * free_list - func that frees a list
  * @head: the list used in the func
